@@ -21,4 +21,4 @@
 
 ### Preview
 
-![Stars Preview](https://i.hizliresim.com/r9ie23b.PNG)
+![Stars Preview](https://i.hizliresim.com/i7uhbnj.PNG)

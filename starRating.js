@@ -4,7 +4,9 @@ class StarRating extends HTMLElement {
         this.attachShadow({ mode: 'open' })
         const element = document.createElement('div')
         const size = this.getAttribute('size') ? this.getAttribute('size') : '32'
-        console.log(size)
+        const stars = this.getAttribute('stars')
+        const maxStar = parseInt(this.getAttribute('maxStar'))
+
         element.innerHTML = `
            <style>
                 .c-icon.stroke{
@@ -29,7 +31,7 @@ class StarRating extends HTMLElement {
                 </defs>
             </svg>
 
-            <p class="c-rate">
+            <p class="c-rate" aria-label="Rating is ${stars} out of ${maxStar}">
             </p>
         `
         this.shadowRoot.append(element)

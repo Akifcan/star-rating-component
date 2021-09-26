@@ -3,21 +3,23 @@ class StarRating extends HTMLElement {
         super()
         this.attachShadow({ mode: 'open' })
         const element = document.createElement('div')
+        const size = this.getAttribute('size') ? this.getAttribute('size') : '32'
+        console.log(size)
         element.innerHTML = `
            <style>
                 .c-icon.stroke{
                     stroke: black;
                 }
            </style>
-            <svg style="width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <svg style="width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}">
                 <defs>
                     <mask id="half">
-                        <rect x="0" y="0" width="32" height="32" fill="grey" />
-                        <rect x="-16px" y="0" width="32" height="32" fill="white" />
+                        <rect x="0" y="0" width="${size}" height="${size}" fill="grey" />
+                        <rect x="-50%" y="0" width="${size}" height="${size}" fill="white" />
                     </mask>
 
                     <mask id="remain">
-                        <rect x="0" y="0" width="32" height="32" fill="grey" />
+                        <rect x="0" y="0" width="${size}" height="${size}" fill="grey" />
                     </mask>
 
                     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">

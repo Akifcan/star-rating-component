@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #aaa;
+        }
+
+        section {
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <svg style="width: 30; height: 30;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path
+            d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+    </svg>
+
+    <section>
+        <star-rating color="red" stroke size="14" stars="3.5" maxStar="5"></star-rating>
+        <star-rating size="16" stars="3.2" maxStar="5"></star-rating>
+        <star-rating color="blue" size="16" stars="2.5" maxStar="5"></star-rating>
+    </section>
+
+
+    <script defer src="./starRating.js"></script>
+
+</body>
+
+</html>

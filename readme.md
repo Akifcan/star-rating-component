@@ -10,7 +10,7 @@
         maxStar="5"></star-rating>
     <star-rating
         size="16"
-        stars="3.2"
+        stars="3.5"
         maxStar="5"></star-rating>
     <star-rating
         color="blue"

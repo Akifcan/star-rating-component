@@ -1,5 +1,8 @@
 # Javascript Star Rating Component
 
+### Inspired from this article
+[Star Rating: An SVG Solution from Ahmd Shadeed](https://ishadeed.com/article/star-rating-svg/)
+
 ## Usage
 
 ```
